@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="FreeFunDev_FixModule::greetings"
+             title="Greetings"
+             translate="title"
+             module="FreeFunDev_FixModule"
+             sortOrder="50"
+             parent="Magento_Backend::content"
+             dependsOnModule="FreeFunDev_FixModule"
+             resource="FreeFunDev_FixModule::greetings"/>
+        <add id="FreeFunDev_FixModule::greetings_helloworld"
+             title="Hello World"
+             translate="title"
+             module="FreeFunDev_FixModule"
+             parent="FreeFunDev_FixModule::greetings"
+             sortOrder="10"
+             dependsOnModule="FreeFunDev_FixModule"
+             action="fixmodule/helloworld"
+             resource="FreeFunDev_FixModule::greetings"
+            />
+    </menu>
+</config>
